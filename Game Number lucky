@@ -1,0 +1,15 @@
+import random
+
+number = random.randint(1, 100)
+count = 0
+
+while True:
+    guess = int(input("Nhập số bạn đoán (1-100): "))
+    count += 1
+    if guess < number:
+        print("Thấp quá!")
+    elif guess > number:
+        print("Cao quá!")
+    else:
+        print("Đúng rồi! Bạn đoán", count, "lần.")
+        break
